@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Angular Application</title>
 </head>
-<body>
-
+<body ng-app="app">
+    <h1 ng-controller="MainController">
+      Right now it is {{ temporality.month }} {{ temporality.day }}, {{ temporality.year }}.
+    </h1>
     <script src="js/angular.js"></script>
     <script src="js/app/app.js"></script>
     <script src="js/app/controllers/MainController.js"></script>
